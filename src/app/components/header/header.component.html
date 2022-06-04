@@ -1,0 +1,23 @@
+<header>
+    <div class="navbar navbar-dark bg-primary shadow-sm">
+        <div class="navbar-brand align-item-center d-flex">
+            <i style="font-size: 35px;" class="fas fa-shipping-fast"></i>
+            <button style=" background: none!important;
+            border: none;
+            padding: 0!important;
+            /*optional*/
+            font-family: arial, sans-serif;
+            /*input has OS specific font-family*/
+            text-decoration: none;
+            cursor: pointer;" routerLink="/products"><strong style="font-size: 25px;">FastShopping</strong></button>
+            <div class="from-group"> <span class="search-icon fas fa-search"></span>
+                <input type="text" class="form-control" placeholder="Search Products">
+            </div>
+            
+        </div>
+    <button routerLink="cart" class="btn btn-primary">
+        <i style="font-size: 30px;" class="fas fa-cart-plus"></i>
+        <div class="badge bg-danger">{{totalItemNumber}}</div>
+    </button>
+    </div>
+</header>
